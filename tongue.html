@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeakWise - Tongue Twister</title>
+    <link rel="stylesheet" href="tongue.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">Speak<span>Wise</span></a>
+    <a href="index.html" class="back-btn">← Home</a>
+</header>
+
+<main class="container">
+
+    <section class="welcome">
+        <div class="tag">✦ SPEAKING PRACTICE</div>
+        <h1>Tongue <span>Twister</span></h1>
+        <p>Listen, speak, record your voice, and improve your fluency!</p>
+    </section>
+
+    <section class="progress-card">
+        <div class="progress-info">
+            <span id="levelLabel">Level 1 of 20</span>
+            <span id="progressLabel">0% Completed</span>
+        </div>
+
+        <div class="progress-track">
+            <div id="progressBar"></div>
+        </div>
+
+        <div class="stats">
+            <div>⭐ <b id="xpValue">0</b><small> XP</small></div>
+            <div>🏆 <b id="completedValue">0</b><small> Levels</small></div>
+        </div>
+    </section>
+
+    <section class="practice-card">
+
+        <div class="level-heading">
+            <div>
+                <span class="small-label">YOUR CHALLENGE</span>
+                <h2 id="challengeTitle">Easy Peasy</h2>
+            </div>
+            <span class="level-badge" id="levelBadge">LEVEL 1</span>
+        </div>
+
+        <div class="twister-box">
+            <div class="mascot">🗣️</div>
+            <p id="twisterText"></p>
+            <span class="hint">Say it clearly, not too fast!</span>
+        </div>
+
+        <div class="audio-controls">
+            <button id="playButton" class="primary-btn">
+                🔊 Play Voice
+            </button>
+
+            <button id="stopButton" class="secondary-btn">
+                ⏹ Stop
+            </button>
+        </div>
+
+        <p id="audioStatus" class="status" aria-live="polite">
+            Listen to the tongue twister first.
+        </p>
+
+        <div class="record-section">
+            <h3>🎙️ Your Turn!</h3>
+            <p>Press record, speak the tongue twister, then stop and listen to your recording.</p>
+
+            <div class="record-controls">
+                <button id="recordButton" class="record-btn">
+                    🔴 Start Recording
+                </button>
+
+                <button id="stopRecordButton" class="secondary-btn" disabled>
+                    ⏹ Stop Recording
+                </button>
+            </div>
+
+            <div id="recordStatus" class="record-status" aria-live="polite">
+                Microphone is ready when you are.
+            </div>
+
+            <audio id="recordedAudio" controls hidden></audio>
+
+            <button id="completeButton" class="check-btn" disabled>
+                Complete Level →
+            </button>
+
+            <p class="small-note">
+                Record and listen to your voice before completing the level.
+            </p>
+        </div>
+
+        <div id="resultBox" class="result-box" hidden>
+            <h2 id="resultTitle">Level Completed! 🎉</h2>
+
+            <div class="score-circle">
+                <span id="scoreValue">100%</span>
+                <small>Practice score</small>
+            </div>
+
+            <p id="resultMessage"></p>
+
+            <div class="result-details">
+                <div>
+                    <b id="practiceStatus">✓</b>
+                    <span>Voice recorded</span>
+                </div>
+
+                <div>
+                    <b id="playStatus">✓</b>
+                    <span>Recording played</span>
+                </div>
+
+                <div>
+                    <b id="earnedXP">20</b>
+                    <span>XP earned</span>
+                </div>
+            </div>
+
+            <button id="nextButton" class="check-btn">
+                Next Level →
+            </button>
+
+            <p id="unlockMessage" class="unlock-message"></p>
+        </div>
+
+    </section>
+
+    <section class="level-section">
+        <h2>Your Level Journey 🗺️</h2>
+        <p>Finish each challenge to unlock the next one.</p>
+        <div id="levelPath" class="level-path"></div>
+    </section>
+
+</main>
+
+<div id="toast" class="toast" aria-live="polite"></div>
+
+<script src="tongue.js"></script>
+</body>
+</html>

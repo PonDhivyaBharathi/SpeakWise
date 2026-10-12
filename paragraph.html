@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpeakWise - Dictation</title>
+
+    <link rel="stylesheet" href="paragraph.css">
+    <script src="paragraph.js" defer></script>
+</head>
+
+<body>
+
+<header class="topbar">
+    <a href="index.html" class="back-btn">← Home</a>
+    <h1>SpeakWise 🎧</h1>
+    <span class="xp" id="xpDisplay">⭐ 0 XP</span>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <span class="tag">LISTENING & WRITING PRACTICE</span>
+
+        <h2>Listen. Understand. Type. ✨</h2>
+
+        <p>
+            Listen to the paragraph carefully and type what you hear.
+            Check your score and improve with every level.
+        </p>
+    </section>
+
+    <section class="progress-card">
+
+        <div class="progress-info">
+            <span id="levelLabel">Level 1 of 20</span>
+            <span id="progressLabel">0% Completed</span>
+        </div>
+
+        <div class="progress-track">
+            <div id="progressBar"></div>
+        </div>
+
+    </section>
+
+    <section class="practice-card">
+
+        <div class="challenge-header">
+            <span id="levelTag">LEVEL 1</span>
+            <h2 id="paragraphTitle">My Daily Routine</h2>
+            <p id="paragraphDescription">
+                Listen carefully and type the paragraph.
+            </p>
+        </div>
+
+        <div class="audio-card">
+
+            <div class="audio-icon">🔊</div>
+
+            <h3>Listen to the Paragraph</h3>
+
+            <p>
+                Use the play button to listen.
+                You can replay the voice as many times as you need.
+            </p>
+
+            <div class="audio-buttons">
+                <button type="button" id="playButton" class="primary-btn">
+                    ▶ Play Voice
+                </button>
+
+                <button type="button" id="stopButton" class="secondary-btn">
+                    ⏹ Stop Voice
+                </button>
+            </div>
+
+            <p id="voiceStatus" class="voice-status" aria-live="polite">
+                Ready to play.
+            </p>
+
+        </div>
+
+        <label for="userAnswer" class="answer-label">
+            ✍️ Type the paragraph you heard
+        </label>
+
+        <textarea
+            id="userAnswer"
+            rows="7"
+            placeholder="Listen to the voice and type the paragraph here..."
+            spellcheck="false"
+        ></textarea>
+
+        <button type="button" id="checkButton" class="primary-btn check-btn">
+            🎯 Check My Score
+        </button>
+
+        <section id="resultBox" class="result-box" hidden>
+
+            <h2 id="scoreHeading">Your Result</h2>
+
+            <div class="score-circle">
+                <span id="scoreValue">0%</span>
+                <small>Accuracy</small>
+            </div>
+
+            <p id="resultMessage"></p>
+
+            <div class="stats">
+                <div>
+                    <strong id="correctCount">0</strong>
+                    <span>Correct</span>
+                </div>
+
+                <div>
+                    <strong id="wrongCount">0</strong>
+                    <span>Missing / Wrong</span>
+                </div>
+
+                <div>
+                    <strong id="extraCount">0</strong>
+                    <span>Extra</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <h3>Answer Review</h3>
+
+                <p class="legend">
+                    <span class="correct-legend">Green = Correct</span>
+                    <span class="wrong-legend">Red = Wrong / Missing</span>
+                </p>
+
+                <div id="reviewText" class="review-text"></div>
+            </div>
+
+            <button type="button" id="nextButton" class="primary-btn" hidden>
+                Next Level →
+            </button>
+
+            <button type="button" id="retryButton" class="secondary-btn">
+                🔄 Try Again
+            </button>
+
+        </section>
+
+    </section>
+
+    <section class="levels-section">
+
+        <h2>Your Learning Path 🏆</h2>
+
+        <p>Score at least 80% to unlock the next level.</p>
+
+        <div class="levels-grid" id="levelsGrid"></div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>SpeakWise • Listen More, Learn More 💜</p>
+</footer>
+
+</body>
+</html>

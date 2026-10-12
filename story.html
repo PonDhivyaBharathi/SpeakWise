@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpeakWise - Story Development</title>
+
+    <link rel="stylesheet" href="story.css">
+    <script src="story.js" defer></script>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="logo">SpeakWise</a>
+        <a href="index.html" class="home-link">← Home</a>
+    </header>
+
+    <main class="container">
+
+        <section class="heading">
+            <p class="eyebrow">✦ CREATIVE WRITING PRACTICE</p>
+
+            <h1>Story Development</h1>
+
+            <p class="subtitle">
+                Read the title, develop your own story, and improve your English!
+            </p>
+        </section>
+
+        <section class="progress-card">
+
+            <div class="progress-info">
+                <div>
+                    <h3 id="levelText">Level 1 of 20</h3>
+                    <p>⭐ <span id="xpText">0</span> XP</p>
+                    <p>🏆 <span id="completedText">0</span> Levels Completed</p>
+                </div>
+
+                <div class="percentage" id="percentageText">0%</div>
+            </div>
+
+            <div class="progress-track">
+                <div id="progressBar" class="progress-fill"></div>
+            </div>
+
+        </section>
+
+        <section class="story-card">
+
+            <p class="eyebrow">YOUR STORY CHALLENGE</p>
+
+            <h2 id="storyTitle">The Honest Woodcutter</h2>
+
+            <span class="level-badge" id="levelBadge">LEVEL 1</span>
+
+            <div class="instructions">
+                <h3>📝 Your Task</h3>
+
+                <p id="storyTask">
+                    Write a short story about an honest woodcutter.
+                    Include a beginning, a problem, and an ending.
+                </p>
+
+                <p class="hint">
+                    Tip: Write at least 5 sentences. Use correct grammar
+                    and try to make your story interesting.
+                </p>
+            </div>
+
+            <label for="storyInput" class="input-label">
+                ✍️ Develop Your Story
+            </label>
+
+            <textarea
+                id="storyInput"
+                placeholder="Once upon a time..."
+                rows="10"
+                spellcheck="true"
+            ></textarea>
+
+            <div class="writing-info">
+                <span id="wordCount">0 words</span>
+                <span>Minimum: 30 words</span>
+            </div>
+
+            <button id="analyzeButton" class="primary-button">
+                ✨ Analyze My Story
+            </button>
+
+            <p id="message" class="message" aria-live="polite"></p>
+
+        </section>
+
+        <section id="resultSection" class="result-card" hidden>
+
+            <p class="eyebrow">YOUR PERFORMANCE</p>
+
+            <h2>📊 Story Analysis Result</h2>
+
+            <div class="score-circle">
+                <span id="scoreText">0</span>
+                <small>/100</small>
+            </div>
+
+            <h3 id="resultTitle">Keep Practicing!</h3>
+
+            <p id="resultMessage"></p>
+
+            <div class="stats-grid">
+
+                <div class="stat-box">
+                    <span>📝</span>
+                    <h3 id="wordResult">0</h3>
+                    <p>Words</p>
+                </div>
+
+                <div class="stat-box">
+                    <span>❌</span>
+                    <h3 id="grammarResult">0</h3>
+                    <p>Grammar Flags</p>
+                </div>
+
+                <div class="stat-box">
+                    <span>🔤</span>
+                    <h3 id="spellingResult">0</h3>
+                    <p>Spelling Flags</p>
+                </div>
+
+                <div class="stat-box">
+                    <span>⭐</span>
+                    <h3 id="xpResult">0</h3>
+                    <p>XP Earned</p>
+                </div>
+
+            </div>
+
+            <div class="feedback-section">
+                <h3>🔎 Writing Feedback</h3>
+                <div id="feedbackList"></div>
+            </div>
+
+            <div class="feedback-section">
+                <h3>💡 Writing Tips</h3>
+                <ul id="tipsList"></ul>
+            </div>
+
+            <button id="nextButton" class="primary-button" hidden>
+                Next Level →
+            </button>
+
+            <button id="retryButton" class="secondary-button">
+                Try Again
+            </button>
+
+        </section>
+
+        <section class="levels-section">
+
+            <h2>🏆 Your Levels</h2>
+
+            <p>Complete a level with at least 80 marks to unlock the next one.</p>
+
+            <div id="levelsGrid" class="levels-grid"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SpeakWise · Practice English, one story at a time.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0718">
+
+    <meta name="description"
+          content="Improve your English speaking, reading, conversation and storytelling skills with SpeakWise.">
+
+    <title>SpeakWise | English Practice</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- JavaScript -->
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Background effects -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="background-glow glow-three"></div>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="navbar">
+
+        <a class="brand" href="index.html" aria-label="SpeakWise home">
+
+            <span class="brand-icon">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+
+            <span class="brand-name">
+                Speak<span>Wise</span>
+            </span>
+
+        </a>
+
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+        <nav class="nav-links" id="navLinks">
+
+            <a class="nav-link active" href="index.html">Home</a>
+
+            <a class="nav-link" href="tongue.html">
+                Tongue Twister
+            </a>
+
+            <a class="nav-link" href="paragraph.html">
+                Dictation
+            </a>
+
+            <a class="nav-link" href="story.html">
+                Story
+            </a>
+
+        </nav>
+
+
+        <div class="nav-right">
+
+            <div class="streak-pill">
+
+                <span class="streak-icon">🔥</span>
+
+                <span id="navXp">0 XP</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section class="hero section-container">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+
+                    <span class="eyebrow-dot"></span>
+
+                    YOUR ENGLISH JOURNEY STARTS HERE
+
+                </div>
+
+
+                <h1>
+                    Speak English
+                    <br>
+                    <span class="gradient-text">
+                        with Confidence.
+                    </span>
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Practice a little every day, improve your
+                    communication skills, and become the confident
+                    English speaker you've always wanted to be.
+
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a href="#exercises" class="primary-button">
+
+                        Start your journey
+
+                        <span class="button-arrow">→</span>
+
+                    </a>
+
+
+                    <a href="#how-it-works" class="secondary-button">
+
+                        <span class="play-icon">▶</span>
+
+                        Explore features
+
+                    </a>
+
+                </div>
+
+
+                <div class="hero-social-proof">
+
+                    <div class="mini-avatars">
+
+                        <span>🎓</span>
+                        <span>💬</span>
+                        <span>📚</span>
+
+                    </div>
+
+
+                    <p>
+
+                        <strong>4 fun activities</strong>
+
+                        <br>
+
+                        Small steps. Real progress.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Animated robot mascot -->
+
+            <div class="hero-visual"
+                 aria-label="SpeakWise robot mascot">
+
+                <div class="orbit orbit-outer"></div>
+
+                <div class="orbit orbit-inner"></div>
+
+
+                <div class="speech-bubble">
+
+                    <span class="bubble-sparkle">✦</span>
+
+                    Hi! Ready to learn?
+
+                    <span class="bubble-tail"></span>
+
+                </div>
+
+
+                <div class="mascot-glow"></div>
+
+
+                <div class="mascot-container">
+
+                    <div class="mascot-aura"></div>
+
+
+                    <div class="mascot">
+
+                        <div class="mascot-antenna">
+
+                            <span></span>
+
+                        </div>
+
+
+                        <div class="mascot-head">
+
+                            <div class="mascot-side-light"></div>
+
+
+                            <div class="mascot-face">
+
+                                <div class="mascot-eyes">
+
+                                    <span class="mascot-eye"></span>
+
+                                    <span class="mascot-eye"></span>
+
+                                </div>
+
+
+                                <div class="mascot-cheeks">
+
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+
+
+                                <div class="mascot-mouth"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mascot-neck"></div>
+
+
+                        <div class="mascot-body">
+
+                            <div class="mascot-chest-light"></div>
+
+
+                            <div class="mascot-chest-logo">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mascot-arm arm-left"></div>
+
+                        <div class="mascot-arm arm-right"></div>
+
+                        <div class="mascot-shadow"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="floating-chip chip-top">
+
+                    ⭐ <strong>+ XP</strong>
+
+                    <br>
+
+                    Keep going!
+
+                </div>
+
+
+                <div class="floating-chip chip-bottom">
+
+                    🎯 Daily practice
+
+                </div>
+
+
+                <div class="sound-wave">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- ================= STATISTICS ================= -->
+
+        <section class="stats-section section-container">
+
+            <div class="stats-card">
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon stat-purple">🎯</div>
+
+                    <div>
+
+                        <div class="stat-label">
+                            Practice activities
+                        </div>
+
+                        <h3>4</h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-divider"></div>
+
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon stat-orange">🚀</div>
+
+                    <div>
+
+                        <div class="stat-label">
+                            Total levels
+                        </div>
+
+                        <h3>80</h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-divider"></div>
+
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon stat-cyan">⭐</div>
+
+                    <div>
+
+                        <div class="stat-label">
+                            Total XP
+                        </div>
+
+                        <h3 id="totalXp">0</h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-divider"></div>
+
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon stat-pink">🏆</div>
+
+                    <div>
+
+                        <div class="stat-label">
+                            Levels completed
+                        </div>
+
+                        <h3 id="completedLevels">0</h3>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- ================= EXERCISES ================= -->
+
+        <section class="exercises-section section-container"
+                 id="exercises">
+
+
+            <div class="section-heading">
+
+                <div>
+
+                    <div class="section-eyebrow">
+                        YOUR LEARNING ZONE
+                    </div>
+
+                    <h2>
+
+                        Choose Your
+
+                        <span class="gradient-text">
+                            Adventure.
+                        </span>
+
+                    </h2>
+
+                    <p>
+                        Four fun ways to improve your English,
+                        one level at a time.
+                    </p>
+
+                </div>
+
+
+                <div class="level-indicator">
+
+                    <span class="level-indicator-dot"></span>
+
+                    20 levels in each activity
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="exercise-grid">
+
+
+                <!-- Tongue Twister -->
+
+                <article class="exercise-card">
+
+                    <div class="card-top">
+
+                        <div class="exercise-icon">👅</div>
+
+                        <span class="difficulty-tag tag-purple">
+                            SPEAKING
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-art tongue-art">
+
+                        <span class="art-orb orb-one"></span>
+
+                        <span class="art-orb orb-two"></span>
+
+                        <div class="art-mic">🎙️</div>
+
+                        <span class="art-sound sound-one">Aa</span>
+
+                        <span class="art-sound sound-two">〰</span>
+
+                        <span class="art-sound sound-three">✦</span>
+
+                    </div>
+
+
+
+                    <div class="card-content">
+
+                        <div class="card-title-row">
+
+                            <h3>Tongue Twister</h3>
+
+                            <span class="card-emoji">🗣️</span>
+
+                        </div>
+
+
+                        <p>
+                            Practice tricky sentences, listen to
+                            pronunciation, and record your own voice.
+                        </p>
+
+
+                        <div class="card-meta">
+
+                            <span>🎧 Listen</span>
+
+                            <span>🎤 Record</span>
+
+                            <span>20 levels</span>
+
+                        </div>
+
+
+                        <div class="card-progress">
+
+                            <div class="progress-label">
+
+                                <span>Progress</span>
+
+                                <strong id="tongueCount">
+                                    0 / 20
+                                </strong>
+
+                            </div>
+
+
+                            <div class="progress-track">
+
+                                <div class="progress-fill tongue-fill"
+                                     id="tongueBar">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <a class="exercise-button tongue-button"
+                           href="tongue.html">
+
+                            Start practicing
+
+                            <span>→</span>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+
+                <!-- Paragraph Reading -->
+
+                <article class="exercise-card">
+
+                    <div class="card-top">
+
+                        <div class="exercise-icon">📖</div>
+
+                        <span class="difficulty-tag tag-cyan">
+                            READING
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-art reading-art">
+
+                        <div class="reading-book">
+
+                            <div class="book-page page-left">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+
+                            <div class="book-page page-right">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+
+                            <div class="book-spine"></div>
+
+                        </div>
+
+
+                        <span class="reading-star star-one">✦</span>
+
+                        <span class="reading-star star-two">✧</span>
+
+                        <span class="reading-star star-three">✦</span>
+
+                    </div>
+
+
+
+                    <div class="card-content">
+
+                        <div class="card-title-row">
+
+                            <h3>Paragraph Reading</h3>
+
+                            <span class="card-emoji">✍️</span>
+
+                        </div>
+
+
+                        <p>
+                            Listen to a paragraph, type what you hear,
+                            and check spelling accuracy.
+                        </p>
+
+
+                        <div class="card-meta">
+
+                            <span>🔊 Audio</span>
+
+                            <span>⌨️ Type</span>
+
+                            <span>20 levels</span>
+
+                        </div>
+
+
+                        <div class="card-progress">
+
+                            <div class="progress-label">
+
+                                <span>Progress</span>
+
+                                <strong id="readingCount">
+                                    0 / 20
+                                </strong>
+
+                            </div>
+
+
+                            <div class="progress-track">
+
+                                <div class="progress-fill reading-fill"
+                                     id="readingBar">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <a class="exercise-button reading-button"
+                           href="paragraph.html">
+
+                            Start reading
+
+                            <span>→</span>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Story Development -->
+
+                <article class="exercise-card">
+
+                    <div class="card-top">
+
+                        <div class="exercise-icon">📚</div>
+
+                        <span class="difficulty-tag tag-orange">
+                            CREATIVE
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-art story-art">
+
+                        <div class="story-moon"></div>
+
+                        <div class="story-mountain mountain-back"></div>
+
+                        <div class="story-mountain mountain-front"></div>
+
+                        <div class="story-book">
+
+                            <div class="story-book-page"></div>
+
+                            <span>✦</span>
+
+                        </div>
+
+
+                        <span class="story-star story-star-one">✧</span>
+
+                        <span class="story-star story-star-two">✦</span>
+
+                        <span class="story-star story-star-three">✧</span>
+
+                    </div>
+
+
+
+                    <div class="card-content">
+
+                        <div class="card-title-row">
+
+                            <h3>Story Development</h3>
+
+                            <span class="card-emoji">🪄</span>
+
+                        </div>
+
+
+                        <p>
+                            Write your own story, review spelling and
+                            common grammar patterns, and improve.
+                        </p>
+
+
+                        <div class="card-meta">
+
+                            <span>📝 Write</span>
+
+                            <span>🔎 Review</span>
+
+                            <span>20 levels</span>
+
+                        </div>
+
+
+                        <div class="card-progress">
+
+                            <div class="progress-label">
+
+                                <span>Progress</span>
+
+                                <strong id="storyCount">
+                                    0 / 20
+                                </strong>
+
+                            </div>
+
+
+                            <div class="progress-track">
+
+                                <div class="progress-fill story-fill"
+                                     id="storyBar">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <a class="exercise-button story-button"
+                           href="story.html">
+
+                            Start creating
+
+                            <span>→</span>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="how-section section-container"
+                 id="how-it-works">
+
+
+            <div class="section-heading centered-heading">
+
+                <div class="section-eyebrow">
+                    SIMPLE. FUN. EFFECTIVE.
+                </div>
+
+
+                <h2>
+
+                    Your Journey to
+
+                    <span class="gradient-text">
+                        Fluency.
+                    </span>
+
+                </h2>
+
+
+                <p>
+                    Learn at your own pace and celebrate every little win.
+                </p>
+
+            </div>
+
+
+
+            <div class="steps-grid">
+
+
+                <div class="step-card">
+
+                    <span class="step-number">01</span>
+
+                    <div class="step-icon">🎮</div>
+
+                    <h3>Choose a challenge</h3>
+
+                    <p>
+                        Pick the English skill you want to improve.
+                    </p>
+
+                </div>
+
+
+                <div class="step-connector">→</div>
+
+
+                <div class="step-card">
+
+                    <span class="step-number">02</span>
+
+                    <div class="step-icon">✨</div>
+
+                    <h3>Practice and improve</h3>
+
+                    <p>
+                        Complete activities and learn from your mistakes.
+                    </p>
+
+                </div>
+
+
+                <div class="step-connector">→</div>
+
+
+                <div class="step-card">
+
+                    <span class="step-number">03</span>
+
+                    <div class="step-icon">🏆</div>
+
+                    <h3>Unlock new levels</h3>
+
+                    <p>
+                        Earn XP, celebrate your progress, and keep growing.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- ================= MOTIVATION SECTION ================= -->
+
+        <section class="motivation-section section-container">
+
+            <div class="motivation-card">
+
+
+                <div class="motivation-content">
+
+                    <span class="motivation-label">
+                        A LITTLE REMINDER
+                    </span>
+
+
+                    <h2>
+
+                        Every expert was once
+
+                        <span class="gradient-text">
+                            a beginner.
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+                        Don't worry about making mistakes. Every practice
+                        session makes you better. Keep showing up for yourself!
+                    </p>
+
+
+                    <a href="#exercises" class="motivation-button">
+
+                        Let's begin
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="motivation-visual">
+
+                    <div class="circle-one motivation-circle"></div>
+
+                    <div class="circle-two motivation-circle"></div>
+
+                    <div class="motivation-trophy">🚀</div>
+
+                    <span class="motivation-sparkle sparkle-one">✦</span>
+
+                    <span class="motivation-sparkle sparkle-two">✧</span>
+
+                    <span class="motivation-sparkle sparkle-three">⭐</span>
+
+                </div>
+
+
+                <div class="motivation-decoration decoration-one"></div>
+
+                <div class="motivation-decoration decoration-two"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+
+            <a class="brand footer-brand" href="index.html">
+
+                <span class="brand-icon">
+
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+
+                </span>
+
+
+                <span class="brand-name">
+                    Speak<span>Wise</span>
+                </span>
+
+            </a>
+
+
+
+            <p>
+                Practice today. Speak confidently tomorrow.
+            </p>
+
+
+
+            <span class="footer-copy">
+
+                © <span id="currentYear"></span> SpeakWise
+
+            </span>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Toast notification -->
+
+    <div class="toast"
+         id="toast"
+         role="status"
+         aria-live="polite">
+    </div>
+
+
+</body>
+</html>
